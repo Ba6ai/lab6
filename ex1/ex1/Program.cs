@@ -1,0 +1,56 @@
+﻿using ex1;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int x, y, z;
+        Console.WriteLine("Введите число x:");
+        while(!int.TryParse(Console.ReadLine(), out x))
+        {
+            Console.WriteLine("Ошибка ввода, введите число 'x' ещё раз:");
+        }
+
+        Console.WriteLine("Введите число y: ");
+        while (!int.TryParse(Console.ReadLine(), out y))
+        {
+            Console.WriteLine("Ошибка ввода, введите число 'y' ещё раз:");
+        }
+
+        Console.WriteLine("Введите число z: ");
+        while (!int.TryParse(Console.ReadLine(), out z))
+        {
+            Console.WriteLine("Ошибка ввода, введите число 'z' ещё раз:");
+        }
+
+        MAX count1 = new MAX(x, y, z); // Инициализация объекта
+        MAX count2 = new MAX(count1); // Для копирования
+
+        int max1 = count1.GetMAX(); // Вызов метода объекта
+
+        Console.Write("Максимальное число = ");
+        Console.WriteLine(max1);
+
+        Console.Write("Результат умножения 3 цифр: ");
+        DotMAX dot1 = new DotMAX(x, y, z);
+        Console.WriteLine(dot1.GetYmn());
+
+        Console.Write("Периметр треугольника 'x' 'y' 'z' = ");
+        DotMAX dot2 = new DotMAX(x, y, z);
+        Console.WriteLine(dot2.GetP());
+
+
+        // Замена 'x'
+        Console.Write("Замена 'x' : ");
+        while (!int.TryParse(Console.ReadLine(), out x))
+        {
+            Console.WriteLine("Ошибка ввода, введите число 'x' ещё раз:");
+        }
+        count2.getX = x;
+
+        Console.Write("Все введённые числа count1: ");
+        Console.WriteLine(count1);
+        Console.Write("Все введённые числа count2: ");
+        Console.WriteLine(count2);
+    }
+}
