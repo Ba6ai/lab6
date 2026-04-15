@@ -2,9 +2,10 @@
 {
     internal class MAX
     {
-        protected int x, y, z;
+        protected int x = 0;
+        protected int y = 0;
+        protected int z = 0;
 
-        // Конструктор (по улмолчанию)
         public MAX(int x, int y, int z)
         {
             this.x = x;
@@ -12,7 +13,6 @@
             this.z = z;
         }
 
-        // Копирование
         public MAX(MAX i)
         {
             this.x = i.x;
@@ -20,20 +20,18 @@
             this.z = i.z;
         }
 
-        // Свойства
         public int getX
         {
             get { return x; }
             set { x = value; }
         }
 
-        // Получение максимума
         public int GetMAX()
         {
             return Math.Max(this.x, Math.Max(this.y, this.z));
         }
 
-        // Методы
+        
         public override string ToString()
         {
             return x + " " + y + " " + z;

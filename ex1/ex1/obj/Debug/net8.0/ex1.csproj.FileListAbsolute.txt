@@ -12,3 +12,4 @@ C:\Users\elise\OneDrive\УНИК\2Курс\2\ЯП\kt3\lab6\ex1\ex1\obj\Debug\net
 C:\Users\elise\OneDrive\УНИК\2Курс\2\ЯП\kt3\lab6\ex1\ex1\obj\Debug\net8.0\ex1.pdb
 C:\Users\elise\OneDrive\УНИК\2Курс\2\ЯП\kt3\lab6\ex1\ex1\obj\Debug\net8.0\ex1.genruntimeconfig.cache
 C:\Users\elise\OneDrive\УНИК\2Курс\2\ЯП\kt3\lab6\ex1\ex1\obj\Debug\net8.0\ref\ex1.dll
+C:\Users\elise\OneDrive\УНИК\2Курс\2\ЯП\kt3\lab6\ex1\ex1\obj\Debug\net8.0\ex1.sourcelink.json

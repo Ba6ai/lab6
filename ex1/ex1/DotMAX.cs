@@ -1,16 +1,16 @@
 ﻿using ex1;
-class DotMAX : MAX // Наследование
+class DotMAX : MAX
 {
     public DotMAX(int x, int y, int z) : base(x, y, z)
     {
     }
 
-    public int GetYmn() // Получение произведения из 3 цифр
+    public int GetYmn()
     {
         return x * y * z;
     }
 
-    public int GetP() // Получение периметра треугольника
+    public int GetP()
     {
         return x + y + z;
     }
