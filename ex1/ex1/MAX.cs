@@ -20,7 +20,7 @@
             this.z = i.z;
         }
 
-        public int getX
+        public int X
         {
             get { return x; }
             set { x = value; }

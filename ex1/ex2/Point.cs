@@ -17,13 +17,13 @@
             this.y = p.y;
         }
 
-        public double getX
+        public double X
         {
             get { return x; }
             set { x = value; }
         }
 
-        public double getY
+        public double Y
         {
             get { return y; }
             set { y = value; }

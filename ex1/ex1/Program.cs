@@ -48,7 +48,7 @@ internal class Program
         {
             Console.WriteLine("Ошибка ввода, введите ещё раз:");
         }
-        count2.getX = x;
+        count2.X = x;
 
         Console.Write("Все введённые числа count1: ");
         Console.WriteLine(count1);
