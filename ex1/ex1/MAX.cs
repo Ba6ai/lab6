@@ -2,39 +2,45 @@
 {
     internal class MAX
     {
-        protected int x = 0;
-        protected int y = 0;
-        protected int z = 0;
+        protected int _x;
+        protected int _y;
+        protected int _z;
 
         public MAX(int x, int y, int z)
         {
-            this.x = x;
-            this.y = y;
-            this.z = z;
+            this._x = x;
+            this._y = y;
+            this._z = z;
         }
 
         public MAX(MAX i)
         {
-            this.x = i.x;
-            this.y = i.y;
-            this.z = i.z;
+            this._x = i._x;
+            this._y = i._y;
+            this._z = i._z;
         }
 
         public int X
         {
-            get { return x; }
-            set { x = value; }
+            get 
+            {
+                return _x; 
+            }
+            set 
+            {
+                _x = value;
+            }
         }
 
         public int GetMAX()
         {
-            return Math.Max(this.x, Math.Max(this.y, this.z));
+            return Math.Max(this._x, Math.Max(this._y, this._z));
         }
 
         
         public override string ToString()
         {
-            return x + " " + y + " " + z;
+            return _x + " " + _y + " " + _z;
         }
     }
 }

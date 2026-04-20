@@ -2,41 +2,53 @@
 {
     internal class Point
     {
-        double x;
-        double y;
+        double _x;
+        double _y;
 
         public Point(double x, double y)
         {
-            this.x = x;
-            this.y = y;
+            this._x = x;
+            this._y = y;
         }
 
         public Point(Point p)
         {
-            this.x = p.x;
-            this.y = p.y;
+            this._x = p._x;
+            this._y = p._y;
         }
 
         public double X
         {
-            get { return x; }
-            set { x = value; }
+            get 
+            { 
+                return _x; 
+            }
+            set
+            {
+                _x = value; 
+            }
         }
 
         public double Y
         {
-            get { return y; }
-            set { y = value; }
+            get 
+            { 
+                return _y; 
+            }
+            set 
+            {
+                _y = value; 
+            }
         }
 
         public override string ToString()
         {
-            return x + " " + y;
+            return _x + " " + _y;
         }
 
         public double GetDistance(Point p2)
         {
-            return Math.Sqrt(Math.Pow(p2.x - this.x, 2) + Math.Pow(p2.y - this.y, 2));
+            return Math.Sqrt(Math.Pow(p2._x - this._x, 2) + Math.Pow(p2._y - this._y, 2));
         }
 
 
