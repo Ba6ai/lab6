@@ -51,6 +51,39 @@
             return Math.Sqrt(Math.Pow(p2._x - this._x, 2) + Math.Pow(p2._y - this._y, 2));
         }
 
+        public static Point operator ++(Point P)
+        {
+            return new Point(P._x + 1, P._y);
+        }
 
+        public static Point operator --(Point P)
+        {
+            return new Point(P._x - 1, P._y);
+        }
+
+        public static explicit operator int(Point p)
+        {
+            return (int)p._x;
+        }
+
+        public static implicit operator double(Point p)
+        {
+            return p._y;
+        }
+        
+        public static double operator +(Point p1, Point p2)
+        {
+            return Math.Sqrt(Math.Pow(p2._x - p1._x, 2) + Math.Pow(p2._y - p1._y, 2));
+        }
+
+        public static Point operator +(Point p, double val)
+        {
+            return new Point(p._x + val, p._y);
+        }
+
+        public static Point operator +(double val, Point p)
+        {
+            return new Point(p._x + val, p._y);
+        }
     }
 }
