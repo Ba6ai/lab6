@@ -42,10 +42,10 @@ internal class Program
 
         double distance = p1 + p2;
 
-        Point moove = p1 + 5.0;
+        Point moove = p1 + 5.4;
 
         Console.WriteLine("Дистанция = " + distance);
-        Console.WriteLine("Прибавление вещественнрого = " + moove);
+        Console.WriteLine("Прибавление вещественного к Х = " + moove);
     }
 
     private static double Enter()
