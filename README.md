@@ -170,6 +170,6 @@
 ### Тестирование
 
 
-![Inage](Inage/z3.1.png)
+![Inage](Image/z3.1.png)
 
 
